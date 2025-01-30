@@ -11,7 +11,7 @@
 
 <body>
     <?php include('./includes/header.php'); ?>
-    <?php include('./includes/home/hero.php'); ?>
+    <?php include('./home/hero.php'); ?>
 </body>
 
 </html>

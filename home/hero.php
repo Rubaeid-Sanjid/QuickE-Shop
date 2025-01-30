@@ -5,8 +5,8 @@
       <p>Shop Smart, Shop Quick!</p>
     </div>
 
-    <div>
-      <img src="../../images/boy.png" alt="" style="height: 300px; width: 300px;">
+    <div style="height: 50%;">
+      <img src="https://i.postimg.cc/qBn5pgpr/boy.png" alt="" style="height: 100%">
     </div>
   </div>
   <div class="cta">
