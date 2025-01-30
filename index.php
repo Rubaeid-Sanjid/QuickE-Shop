@@ -12,6 +12,8 @@
 <body>
     <?php include('./includes/header.php'); ?>
     <?php include('./home/hero.php'); ?>
+    <?php include('./home/categories.php'); ?>
+    
 </body>
 
 </html>

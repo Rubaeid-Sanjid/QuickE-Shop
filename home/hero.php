@@ -5,7 +5,7 @@
       <p>Shop Smart, Shop Quick!</p>
     </div>
 
-    <div style="height: 50%;">
+    <div style="height: 500px;">
       <img src="https://i.postimg.cc/qBn5pgpr/boy.png" alt="" style="height: 100%">
     </div>
   </div>
