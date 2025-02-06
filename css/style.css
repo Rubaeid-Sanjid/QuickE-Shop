@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #262b34;
+    color: #fff;
+    padding: 1rem 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid#fff;
+    padding: 4px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/ttt.png') no-repeat center center/cover;
+    color: #262b34;
+    /* text-align: center; */
+    padding: 5rem 0;
+}
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hero .cta {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.hero button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Featured Categories */
+.categories {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+}
+.categories h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.categories-grid {
+    display: flex;
+    justify-content: space-around;
+}
+.category {
+    text-align: center;
+    padding: 1rem;
+}
+.category img {
+    width: 350px;
+    height: 500px;
+}
+
+/* Trending Products */
+.trending {
+    padding: 3rem 0;
+}
+.trending h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.products {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.product {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+}
+.product img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+}
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.testimonial {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Newsletter Signup */
+.newsletter {
+    text-align: center;
+    padding: 2rem;
+    background-color: #007bff;
+    color: #fff;
+}
+.newsletter input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.newsletter button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
