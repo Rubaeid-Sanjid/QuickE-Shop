@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | QuickE-Shop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="/QuickE-Shop/dist/output.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,10 @@
             $lname = htmlspecialchars($_POST["lname"]);
             $email = htmlspecialchars($_POST["email"]);
             $uname = htmlspecialchars($_POST["uname"]);
+            
             $password = htmlspecialchars($_POST["password"]);
+            $hashPassword = password_hash($password, PASSWORD_DEFAULT);
+
             $passwordRepeat = htmlspecialchars($_POST["passwordRepeat"]);
 
             $error = array();
@@ -35,12 +39,21 @@
                 array_push($error, "Password does not match.");
             }
 
-            if($error > 0){
+            if(count($error) > 0){
+                print_r(count($error));
                 foreach($error as $err){
                     echo "<h3 class='text-red-500 my-2'>$err</h3>";
                 }
             }else{
+                include "../includes/connect.php";
 
+                $sql = "INSERT INTO users (first_name, last_name, user_name, email, password) VALUES ('$fname', '$lname', '$uname', '$email', '$hashPassword')";
+
+                $result = mysqli_query($conn, $sql);
+
+                if($result){
+                    echo "<h3 class='text-green-500 my-2'>Registration Successful</h3>";
+                }
             }
         }
     ?> 

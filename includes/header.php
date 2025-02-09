@@ -10,7 +10,7 @@
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">SHOP</a></li>
-                <li><a href="/QuickE-Shop/register.php">ACCOUNT</a></li>
+                <li><a href="/QuickE-Shop/pages/register.php">ACCOUNT</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
