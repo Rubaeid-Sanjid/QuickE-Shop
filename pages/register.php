@@ -89,6 +89,7 @@
 
         <input type="submit" value="Register" name="register" class="my-3 border px-3 py-1">
     </form>
+    <h4>Already Have an Account ? <a href="./login.php">Login</a></h4>
 </body>
 
 </html>

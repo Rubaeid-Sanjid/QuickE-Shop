@@ -1,4 +1,6 @@
 <?php
+    $hostname = "http://localhost/QuickE-Shop";
+    
     $localhost = "localhost";
     $username = "root";
     $password = "";
