@@ -26,8 +26,8 @@
             if(empty($fname) OR empty($lname) OR empty($email) OR empty($uname) OR empty($password) OR empty($passwordRepeat)){
                 array_push($error, "All fields are required.");
             }
-            if(!preg_match("/^[A-Za-z]*$/", $fname) OR !preg_match("/^[A-Za-z]*$/", $lname) OR !preg_match("/^[A-Za-z]*$/", $uname)){
-                array_push($error, "Name should only contain letters.");
+            if(!preg_match("/^[a-zA-Z' ']*$/", $fname) OR !preg_match("/^[a-zA-Z' ']*$/", $lname)){
+                array_push($error, "Enter a valid name.");
             }
             if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 array_push($error, "Enter a valid email.");
