@@ -1,3 +1,12 @@
+<?php
+include "../includes/connect.php";
+
+session_start();
+if (isset($_SESSION['userName'])) {
+    header("Location: {$hostname}/admin/dashboard.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,12 +45,16 @@
                 if(password_verify($password, $hashPassword)){
                     echo "<h3 class='text-green-500 my-2'>Login Successful</h3>";
 
-                    session_start();
+                    // session_start();
                     $_SESSION['userId'] = $row['user_id'];
                     $_SESSION['userName'] = $row['user_name'];
                     $_SESSION['userRole'] = $row['user_role'];
 
-                    header("Location: ./dashboard.php");
+                    if($_SESSION['userRole'] === 'admin'){
+                        header("Location: {$hostname}/admin/dashboard.php");
+                    }else{
+                        header("Location: {$hostname}");
+                    }
 
                 }else{
                     echo "<h3 class='text-red-500 my-2'>Invalid Password</h3>";
